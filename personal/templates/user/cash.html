@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My profile</title>
+        <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" style="border: 1px solid black;">
+            <h2>Donate money</h2>
+            <p>You can donate money to towards the preparation pf d birthday</p>
+          <form action="" method="post">
+          <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
+         
+        <label>Amount</label>
+        <textarea class="form-control" name="don"></textarea><br><br>
+        <button class="btn btn-primary">Proceed</button>  
+          </form>
+        </div>
+    </body>
+    </html>
